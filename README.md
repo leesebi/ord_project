@@ -1,2 +1,1 @@
-# ord_project
-graduation project
+# ordproject
