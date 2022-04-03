@@ -12,6 +12,6 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-rootProject.name = "jaebal1"
+rootProject.name = "EyeKeeper"
 include ':app'
-include ':opencv5'
+include ':opencv'
