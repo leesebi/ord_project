@@ -8,9 +8,12 @@
         android:name="android.hardware.camera"
         android:required="false" />
     <uses-feature
+<<<<<<< HEAD
         android:name="android.hardware.camera"
         android:required="false" />
     <uses-feature
+=======
+>>>>>>> 60d7a311f6f452d093a386e52247db3cd967d756
         android:name="android.hardware.camera.autofocus"
         android:required="false" />
     <uses-feature
@@ -31,6 +34,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.EyeKeeper">
         <activity
+<<<<<<< HEAD
             android:name=".TrafficActivity"
             android:exported="false"
             android:screenOrientation="landscape"/>
@@ -54,6 +58,22 @@
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
             android:value="ca-app-pub-3940256099942544~3347511713" />
+=======
+            android:name=".SplashActivity"
+            android:exported="true">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"
+            android:screenOrientation="portrait">
+
+        </activity>
+>>>>>>> 60d7a311f6f452d093a386e52247db3cd967d756
     </application>
 
 </manifest>

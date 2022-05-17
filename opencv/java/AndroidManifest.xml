@@ -4,6 +4,10 @@
       android:versionCode="3450"
       android:versionName="3.4.5">
 
+<<<<<<< HEAD
     <uses-sdk android:minSdkVersion="21" android:targetSdkVersion="21" />
     <uses-permission android:name="android.permission.CAMERA" />
+=======
+    <uses-sdk android:minSdkVersion="8" android:targetSdkVersion="21" />
+>>>>>>> 60d7a311f6f452d093a386e52247db3cd967d756
 </manifest>

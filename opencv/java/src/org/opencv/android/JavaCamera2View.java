@@ -99,8 +99,13 @@ public class JavaCamera2View extends CameraBridgeViewBase {
                     CameraCharacteristics characteristics = manager.getCameraCharacteristics(cameraID);
                     if ((mCameraIndex == CameraBridgeViewBase.CAMERA_ID_BACK &&
                             characteristics.get(CameraCharacteristics.LENS_FACING) == CameraCharacteristics.LENS_FACING_BACK) ||
+<<<<<<< HEAD
                             (mCameraIndex == CameraBridgeViewBase.CAMERA_ID_FRONT &&
                                     characteristics.get(CameraCharacteristics.LENS_FACING) == CameraCharacteristics.LENS_FACING_FRONT)
+=======
+                        (mCameraIndex == CameraBridgeViewBase.CAMERA_ID_FRONT &&
+                            characteristics.get(CameraCharacteristics.LENS_FACING) == CameraCharacteristics.LENS_FACING_FRONT)
+>>>>>>> 60d7a311f6f452d093a386e52247db3cd967d756
                     ) {
                         mCameraID = cameraID;
                         break;
@@ -194,6 +199,7 @@ public class JavaCamera2View extends CameraBridgeViewBase {
             mPreviewRequestBuilder.addTarget(surface);
 
             mCameraDevice.createCaptureSession(Arrays.asList(surface),
+<<<<<<< HEAD
                     new CameraCaptureSession.StateCallback() {
                         @Override
                         public void onConfigured(CameraCaptureSession cameraCaptureSession) {
@@ -221,6 +227,35 @@ public class JavaCamera2View extends CameraBridgeViewBase {
                         }
                     },
                     null
+=======
+                new CameraCaptureSession.StateCallback() {
+                    @Override
+                    public void onConfigured(CameraCaptureSession cameraCaptureSession) {
+                        Log.i(LOGTAG, "createCaptureSession::onConfigured");
+                        if (null == mCameraDevice) {
+                            return; // camera is already closed
+                        }
+                        mCaptureSession = cameraCaptureSession;
+                        try {
+                            mPreviewRequestBuilder.set(CaptureRequest.CONTROL_AF_MODE,
+                                    CaptureRequest.CONTROL_AF_MODE_CONTINUOUS_PICTURE);
+                            mPreviewRequestBuilder.set(CaptureRequest.CONTROL_AE_MODE,
+                                    CaptureRequest.CONTROL_AE_MODE_ON_AUTO_FLASH);
+
+                            mCaptureSession.setRepeatingRequest(mPreviewRequestBuilder.build(), null, mBackgroundHandler);
+                            Log.i(LOGTAG, "CameraPreviewSession has been started");
+                        } catch (Exception e) {
+                            Log.e(LOGTAG, "createCaptureSession failed", e);
+                        }
+                    }
+
+                    @Override
+                    public void onConfigureFailed(CameraCaptureSession cameraCaptureSession) {
+                        Log.e(LOGTAG, "createCameraPreviewSession failed");
+                    }
+                },
+                null
+>>>>>>> 60d7a311f6f452d093a386e52247db3cd967d756
             );
         } catch (CameraAccessException e) {
             Log.e(LOGTAG, "createCameraPreviewSession", e);

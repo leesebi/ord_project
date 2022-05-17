@@ -313,7 +313,10 @@ public class JavaCameraView extends CameraBridgeViewBase implements PreviewCallb
     }
 
     private class JavaCameraFrame implements CvCameraViewFrame {
+<<<<<<< HEAD
 
+=======
+>>>>>>> 60d7a311f6f452d093a386e52247db3cd967d756
         @Override
         public Mat gray() {
             return mYuvFrameData.submat(0, mHeight, 0, mWidth);

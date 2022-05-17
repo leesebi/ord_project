@@ -1,3 +1,7 @@
 <resources>
+<<<<<<< HEAD
     <string name="app_name">EyeKeeper</string>
+=======
+    <string name="app_name">jaebal1</string>
+>>>>>>> 60d7a311f6f452d093a386e52247db3cd967d756
 </resources>
