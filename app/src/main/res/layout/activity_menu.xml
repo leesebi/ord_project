@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:weightSum="3"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:id="@+id/tutorial"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-1dp"
+        android:layout_marginTop="-1dp"
+        android:layout_marginRight="-1dp"
+        android:layout_marginBottom="-5dp"
+        android:layout_weight="1"
+        android:background="@drawable/border1">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:fontFamily="@font/gmarketsanslight"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:onClick="onTextViewClicked"
+            android:text="튜토리얼 모드"
+            android:textSize="60dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/trafficlight"
+
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-1dp"
+        android:layout_marginTop="-1dp"
+        android:layout_marginRight="-1dp"
+        android:layout_marginBottom="-5dp"
+        android:layout_weight="1"
+        android:background="@drawable/border2">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:fontFamily="@font/gmarketsanslight"
+            android:gravity="center"
+            android:text="횡단 모드"
+            android:textSize="60dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/object"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-1dp"
+        android:layout_marginTop="-1dp"
+        android:layout_marginRight="-1dp"
+        android:layout_marginBottom="-5dp"
+        android:layout_weight="1"
+        android:background="@drawable/border3">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:layout_weight="1"
+            android:fontFamily="@font/gmarketsanslight"
+            android:gravity="center"
+            android:text="보행 모드"
+            android:textSize="60dp" />
+    </LinearLayout>
+</LinearLayout>

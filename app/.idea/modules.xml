@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/567964587/EyeKeeper.iml" filepath="$PROJECT_DIR$/.idea/modules/567964587/EyeKeeper.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/EyeKeeper.app.iml" filepath="$PROJECT_DIR$/.idea/modules/EyeKeeper.app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-109064415/EyeKeeper.opencv.iml" filepath="$PROJECT_DIR$/.idea/modules/-109064415/EyeKeeper.opencv.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1246083046/jaebal1.iml" filepath="$PROJECT_DIR$/.idea/modules/-1246083046/jaebal1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/jaebal1.app.iml" filepath="$PROJECT_DIR$/.idea/modules/jaebal1.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1894910627/jaebal1.opencv5.iml" filepath="$PROJECT_DIR$/.idea/modules/1894910627/jaebal1.opencv5.iml" />
     </modules>
   </component>
 </project>
