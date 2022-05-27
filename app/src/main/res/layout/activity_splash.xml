@@ -4,12 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-<<<<<<< HEAD
     tools:context=".WalkingActivity"
     android:background="@color/white">
-=======
-    tools:context=".MainActivity">
->>>>>>> 60d7a311f6f452d093a386e52247db3cd967d756
 
     <ImageView
         android:id="@+id/imageView"

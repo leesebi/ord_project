@@ -9,6 +9,7 @@ import android.os.Handler;
 import android.os.Message;
 import android.speech.tts.TextToSpeech;
 import android.view.SurfaceView;
+import android.view.WindowManager;
 import android.widget.Toast;
 
 import org.opencv.android.BaseLoaderCallback;
@@ -101,6 +102,7 @@ public class TrafficActivity extends AppCompatActivity implements CameraBridgeVi
         tts.setSpeechRate(2.0f);
 
         super.onCreate(savedInstanceState);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_traffic);
 
         cameraBridgeViewBase = (CameraBridgeViewBase) findViewById(R.id.TrafficView);

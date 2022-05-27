@@ -3,13 +3,13 @@
     android:orientation="vertical"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:weightSum="3"
+    android:weightSum="4"
     android:background="#ffffff">
 
     <LinearLayout
         android:id="@+id/tutorial"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="20dp"
         android:layout_marginLeft="-1dp"
         android:layout_marginTop="-1dp"
         android:layout_marginRight="-1dp"
@@ -26,9 +26,9 @@
             android:clickable="true"
             android:fontFamily="@font/gmarketsanslight"
             android:gravity="center"
-            android:textColor="@color/black"
             android:onClick="onTextViewClicked"
             android:text="튜토리얼 모드"
+            android:textColor="@color/black"
             android:textSize="60dp" />
 
     </LinearLayout>
@@ -37,7 +37,7 @@
         android:id="@+id/trafficlight"
 
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="20dp"
         android:layout_marginLeft="-1dp"
         android:layout_marginTop="-1dp"
         android:layout_marginRight="-1dp"
@@ -61,7 +61,7 @@
     <LinearLayout
         android:id="@+id/object"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="20dp"
         android:layout_marginLeft="-1dp"
         android:layout_marginTop="-1dp"
         android:layout_marginRight="-1dp"
@@ -80,5 +80,30 @@
             android:gravity="center"
             android:text="보행 모드"
             android:textSize="60dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/bus"
+        android:layout_width="fill_parent"
+        android:layout_height="20dp"
+        android:layout_marginLeft="-1dp"
+        android:layout_marginTop="-1dp"
+        android:layout_marginRight="-1dp"
+        android:layout_marginBottom="-5dp"
+        android:layout_weight="1"
+        android:background="@drawable/border4">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:fontFamily="@font/gmarketsanslight"
+            android:gravity="center"
+            android:text="버스정류장 "
+            android:textColor="@color/black"
+            android:textSize="60dp" />
+
     </LinearLayout>
 </LinearLayout>

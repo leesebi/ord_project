@@ -3,6 +3,7 @@ package com.example.EyeKeeper;
 import android.Manifest;
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.speech.tts.TextToSpeech;
 
@@ -16,7 +17,7 @@ import java.util.List;
 public class PermissionSupport {
     private Context context;
     private Activity activity;
-
+    boolean first = false;
     private TextToSpeech tts;
 
     private String[] permissions = {
@@ -53,17 +54,19 @@ public class PermissionSupport {
 
     public void requestPermission(){
         ActivityCompat.requestPermissions(activity, (String[]) permissionList.toArray(new String[permissionList.size()]), MULTIPLE_PERMISSIONS);
-
     }
 
     public boolean permissionResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults){
         if(requestCode == MULTIPLE_PERMISSIONS && (grantResults.length >0)) {
             for(int i=0; i< grantResults.length; i++){
                 if(grantResults[i] == -1){
+                    checkPermission();
                     return false;
+                }else{
                 }
             }
         }
         return true;
     }
+
 }

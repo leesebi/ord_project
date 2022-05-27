@@ -215,7 +215,7 @@ public class WalkingActivity extends AppCompatActivity implements CameraBridgeVi
                 double dist = 0;
                 int realSize = 0;
 
-                if (objectName == "scooter")
+                if (objectName == "Electric Scooter")
                     realSize = 1310;
                 else if (objectName == "Bicycle")
                     realSize = 970;
@@ -335,7 +335,7 @@ public class WalkingActivity extends AppCompatActivity implements CameraBridgeVi
                 Rect box = boxesArray[idx];
                 int idGuy = clsIds.get(idx);
 
-                List<String> cocoNames = Arrays.asList("Bicycle");
+                List<String> cocoNames = Arrays.asList("Bicycle","Electric Scooter");
 
                 //제일 큰 객체 저장
                 if(heightTemp<box.height){
@@ -362,8 +362,8 @@ public class WalkingActivity extends AppCompatActivity implements CameraBridgeVi
     @Override
     public void onCameraViewStarted(int width, int height) {
 
-        String tinyYoloCfg = getPath("yolov3-tiny_obj.cfg",this);
-        String tinyYoloWeights = getPath("yolov3-tiny_obj_final.weights",this);
+        String tinyYoloCfg = getPath("yolov3-tiny_obj(walking).cfg",this);
+        String tinyYoloWeights = getPath("yolov3-tiny_obj_final(walking).weights",this);
 
         tinyYolo = Dnn.readNetFromDarknet(tinyYoloCfg, tinyYoloWeights);
     }
